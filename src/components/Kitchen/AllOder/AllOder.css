@@ -1,0 +1,61 @@
+.big_container{
+    background-color: rgb(116, 196, 171);
+    padding: 50px;
+}
+.Oder_status{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+.New_Status,.Done_Status{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.quantity{
+    margin-left: 20px;
+    background-color: azure;
+    border-radius: 50%;
+    padding: 10px 15px;
+    
+}
+.Oder_list{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Oder_Detail{
+    background-color: #80cbc4;
+    border: 1px solid #fff;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 7px;
+}
+.info_bill,.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.product_name{
+    margin-right: 30px;
+    width: 70%;
+}
+.product_quantity{
+    width: 20%;
+}
+.btn_complete{
+    padding: 7px;
+    border: none;
+    border-radius: 7px;
+}

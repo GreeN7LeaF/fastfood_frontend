@@ -1,0 +1,486 @@
+@import "./root.css";
+
+* {
+  box-sizing: border-box;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+
+body {
+  /* background: rgb(255, 212, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 200, 203, 0.637) 15%,
+    rgba(255, 199, 199, 0.738) 51%
+  );*/
+}
+
+.bg-gr-bg {
+  background-color: rgb(40, 19, 112);
+}
+
+.bg-gr-primary {
+  background: linear-gradient(
+    90deg,
+    rgba(210, 72, 80, 0.6369398101037289) 15%,
+    rgba(223, 73, 73, 0.7377801462381828) 51%
+  );
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.nav-link {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link {
+  padding: 5px 10px;
+}
+
+.nav-link.active {
+}
+
+#auth-header .nav-link.active {
+  border-radius: 10%;
+  background-color: #fff;
+  color: #333 !important;
+}
+
+#body .nav-link.active {
+  /* background-color: #d7d7d7; */
+  /* color: #fff; */
+  font-weight: 800;
+  color: var(--clr-btn);
+}
+
+#body .title {
+  color: var(--clr-btn);
+}
+
+#auth-header .nav-link {
+  color: #d7d7d7;
+}
+
+#body {
+  height: 100vh;
+  background-color: #fff;
+  /* background: url("https://pin.it/2CMKmML") no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+
+/* .default-img-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 300px;
+  width: 300px;
+}
+
+.default-img-wrapper img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+} */
+
+.default-img-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+input:checked {
+  background-color: var(--clr-btn) !important;
+}
+
+input:focus,
+select:focus,
+.form-control:focus {
+  box-shadow: var(--clr-btn) 0px 0px 0px 2px, var(--clr-btn) 4px 6px -1px,
+    var(--clr-btn) 0px 1px 0px inset !important;
+  border-color: var(--clr-btn) !important;
+}
+
+.btn {
+  padding: auto 15px;
+  text-decoration: none;
+}
+
+.btn:has(:not(a)) {
+  padding: 10px 15px;
+}
+
+.btn-sml {
+  padding: 5px 20px;
+}
+
+.btn:hover {
+  /* color: var(--clr-primary) !important; */
+  background-color: var(--clr-primary) !important;
+  border: solid 1px var(--clr-primary) !important;
+}
+
+.btn-clr-normal {
+  background-color: var(--clr-primary);
+  color: #fff;
+}
+
+.btn-clr-danger {
+  background-color: rgb(161, 0, 0);
+  color: #fff;
+}
+
+.btn-clr-success {
+  background-color: rgb(13, 135, 74);
+  color: #fff;
+}
+
+/* table */
+td .nav-link {
+  transition: all 0.3s;
+}
+
+td .nav-link:hover {
+  background-color: var(--clr-btn);
+  color: #fff;
+  border-radius: 100%;
+}
+
+.main-body {
+  padding: 30px 0;
+}
+
+.main-content {
+  /* background-color: #333; */
+  border-radius: 10px;
+}
+
+.nav-list .nav-item {
+  margin: 8px 0px;
+}
+
+.submenu .nav-link {
+  padding: 5px 10px;
+}
+
+.form {
+  box-shadow: inset 5px 2px #333;
+}
+
+/* dashboard */
+.db-card {
+  background-color: aliceblue;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.submenu.collaspe.show {
+  background-color: #333;
+}
+
+/* breadcumb */
+/* font awesome */
+.breadcumb a.bc-prev::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
+  font: var(--fa-font-solid);
+  content: "\f0da";
+  margin-left: 15px;
+  /* margin-right: 10px; */
+}
+
+.breadcumb a:not(.bc-prev) {
+  /* background-color: var(--clr-btn); */
+  /* color: #fff; */
+  /* border-radius: 10px; */
+}
+
+.breadcumb a.bc-prev:hover {
+  font-weight: 800;
+  color: var(--clr-btn);
+}
+
+/* product */
+.information {
+  /* position: relative; */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.information,
+.information .info-card,
+.information .info-card::after {
+  transition: 0.3s;
+}
+
+.information .col:hover .info-card,
+.information .info-card:hover {
+  background-color: var(--clr-btn);
+  color: #fff;
+  cursor: pointer;
+}
+
+.information .info-card:hover::after {
+  background-color: var(--clr-btn);
+}
+
+.information .info-card {
+  /* border: solid 1px; */
+  position: relative;
+  padding: 15px 30px;
+  background-color: var(--clr-card);
+  box-shadow: inset 5px -5px var(--clr-card-shadow);
+  border-radius: 10px;
+  height: 85px;
+}
+
+.information .info-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  z-index: -1;
+  background-color: var(--clr-card);
+  box-shadow: inset 5px -5px var(--clr-card-shadow);
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+/* create form */
+.create-form select {
+  padding: 7px;
+  border-radius: 5px;
+  border: solid 1px #ced4da;
+}
+
+/* sidebar */
+
+#sidebar {
+  display: inline-block;
+  /* width: 20%; */
+  float: left;
+}
+
+#sidebar > div {
+  width: 275px;
+}
+
+#sidebar > div .logo {
+  height: 200px;
+}
+
+#sidebar #menu .nav-item:has(a.active) {
+  border-left: 5px solid #fff;
+}
+
+#sidebar #menu .nav-item a.active {
+  background-color: antiquewhite;
+  color: #333;
+}
+
+#sidebar #menu .nav-item a {
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 15px 15px 15px 40px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+/* food cart */
+
+#card-list .col {
+  min-width: 25%;
+  max-width: 25%;
+  margin-top: 60px;
+}
+
+#card-list .card-item {
+  position: relative;
+
+  height: 200px;
+  max-width: 90%;
+}
+
+#card-list .card-item .card-info {
+  position: absolute;
+  background-color: rgb(148, 53, 92, 55%);
+  color: #ffdcdc;
+  border-radius: 10px;
+
+  top: 60%;
+  right: 15%;
+  z-index: 2;
+
+  width: 70%;
+  height: 60%;
+
+  margin-left: auto;
+  padding: 20px 30px;
+  /* text-align: right; */
+  transition: all 0.5s;
+}
+
+#card-list .card-item .card-img {
+  width: 80%;
+  height: 200px;
+  overflow: hidden;
+
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px #333;
+  transition: all 0.5s;
+}
+
+#card-list .col:hover {
+  z-index: 2;
+}
+
+#card-list .col:hover .card-info {
+  z-index: -1;
+  opacity: 0;
+  top: 20%;
+  right: 25%;
+}
+
+#card-list .col:hover .card-img button {
+  opacity: 1;
+}
+
+#card-list .card-item .card-img button {
+  position: absolute;
+  opacity: 0;
+
+  width: 80%;
+  background-color: rgb(2, 0, 36, 50%);
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+#card-list .card-item .card-img button div {
+  padding: 10px 20px;
+  background-color: var(--clr-btn);
+  color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  margin: 0px auto;
+}
+
+#card-list .card-item .card-img button div:hover {
+  background-color: #fff;
+  color: var(--clr-btn);
+  font-weight: 600;
+}
+
+#card-list .card-item .card-img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* food list 2 */
+
+#card-list2 .card-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+#card-list2 .card-img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+#card-list2 .card-item .card-name {
+  color: #fff;
+}
+
+#card-list2 .card-item .card-img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+#card-list2 .card-item .card-info {
+  position: absolute;
+  left: 50%;
+
+  width: 60%;
+  height: 50%;
+  padding: 5px 20px;
+  margin: 0 20px;
+  border-left: 3px var(--clr-btn) solid;
+  color: var(--clr-btn);
+
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+#card-list2 .card-wrapper {
+  width: 20%;
+  max-width: 33.3333%;
+  /* min-width: 30%; */
+
+  transition: all 0.5s;
+}
+
+#card-list2 .card-wrapper:hover {
+  margin-right: 200px;
+}
+
+#card-list2 > div:hover .card-img button {
+  opacity: 1;
+}
+
+#card-list2 > div:hover .card-info {
+  opacity: 1;
+
+  transition: all 0.5s;
+  left: 100%;
+}
+
+#card-list2 .card-item .card-img button {
+  position: absolute;
+  opacity: 0;
+
+  width: 100%;
+  background-color: rgb(2, 0, 36, 50%);
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+#card-list2 .card-item .card-img button div {
+  padding: 10px 20px;
+  background-color: var(--clr-btn);
+  color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  margin: 0px auto;
+}
+
+#card-list2 .card-item .card-img button div:hover {
+  background-color: #fff;
+  color: var(--clr-btn);
+  font-weight: 600;
+}

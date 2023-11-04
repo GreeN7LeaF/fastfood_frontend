@@ -1,0 +1,7 @@
+.btn:has(svg){
+    padding: 10px 15px !important;
+}
+.search-icon,.setting-icon{
+    font-size: 23px;
+    color:#fff;
+}

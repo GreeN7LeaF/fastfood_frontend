@@ -1,0 +1,51 @@
+.fw-bold,
+.fw-normal {
+  color: #333 !important;
+}
+
+.del-icon,
+.edit-icon {
+  font-size: 23px;
+}
+
+.add_promotion_big_btn {
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  justify-content: center;
+  padding: 10px 0px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 7px;
+  background-color: #f7a43f;
+  box-shadow: 0 0 7px #dbdbdb;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.add_promotion_big_btn--icon {
+  font-size: 20px;
+}
+
+.item-list {
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.btn_success {
+  background-color: #fff;
+  color: #32c732;
+  border: 1px solid #32c732;
+}
+
+.btn_danger {
+  background-color: #fff;
+  color: #d85c27;
+  border: 1px solid #d85c27;
+}
+
+.form-list {
+  animation: animate 3s linear infinite;
+}

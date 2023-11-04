@@ -1,0 +1,189 @@
+body {
+  /* overflow-y: hidden; */
+}
+
+.order_table_heading {
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.employee-card {
+  width: 160px;
+  display: flex;
+  flex-direction: row;
+}
+
+.trashcan {
+  cursor: pointer;
+}
+
+.order_table_staff_name,
+.order_table_staff_job {
+  text-align: right;
+  margin: 0;
+  font-weight: 700;
+}
+
+.order_table_staff_job {
+  line-height: 20px;
+  font-size: 12px;
+  color: #6c6c6c;
+  font-weight: 500;
+}
+
+.order_table_employee_img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.order_table_employee_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.order_table_body {
+  height: 55vh;
+}
+
+.order_table_body_heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.order_table_body_list_order_item {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.order_table_body_list_order {
+  margin-top: 20px;
+  height: 55vh;
+  overflow-y: scroll;
+}
+
+.list_order_item_image {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.list_order_item_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list_order_item_name_contaiter {
+  margin-left: 20px;
+}
+
+.item_name_container_name_food {
+  font-weight: 600;
+}
+
+.list_order_item_name_contaiter p {
+  margin: 0;
+}
+
+.name_food_quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity_icon {
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.quantity {
+  margin: 0 5px;
+  font-size: 17px;
+  color: #ea7d0fd2;
+  font-weight: 500;
+}
+
+.list_orderr_item_price_container {
+  margin-left: auto;
+}
+
+.price_contaier_currency {
+  color: #ea7d0fd2;
+  font-size: 12px;
+}
+
+.price_container_price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.total_order_container {
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.total_order {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.total_order_amount {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.checkoutbtn {
+  background-color: #ea7d0fd2;
+  color: #fff;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  padding: 20px 0;
+}
+
+/* paying method */
+#paying-method.modal-dialog {
+  max-width: 500px;
+}
+
+#paying-method.modal-dialog .modal-content {
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+#paying-method.modal-dialog .modal-header {
+  background-color: transparent;
+}
+
+.paying-btn {
+  padding: 20px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.paying-momo {
+  --clr: rgb(174, 67, 85);
+  border: 1.5px solid var(--clr);
+}
+
+.paying-cash {
+  --clr: var(--clr-primary);
+  border: 1.5px solid var(--clr);
+}
+
+.paying-btn.active {
+  background-color: var(--clr);
+  color: #fff;
+}

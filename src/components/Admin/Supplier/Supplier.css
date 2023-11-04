@@ -1,0 +1,11 @@
+.note-container-supplier input {
+    padding: 50px 0;
+}
+
+.modal-user {
+    border-radius: 8px;
+}
+
+.del-icon {
+    cursor: pointer;
+}

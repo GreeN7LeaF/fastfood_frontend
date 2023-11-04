@@ -1,0 +1,112 @@
+@import "../../../css/root.css";
+
+/* login */
+#loginContent,
+#loginContent .bg-left > div {
+  height: 100vh;
+}
+
+#loginContent {
+  background: var(--clr-white);
+}
+
+.cloud-bg {
+  background-repeat: no-repeat;
+}
+
+#loginContent .bg-left {
+  padding: 0;
+  overflow: hidden;
+  /* background-color: var(--clr-btn); */
+}
+
+#loginContent {
+  /* background-image: url("/images/login-bg.jpg"); */
+}
+
+#loginContent .bg-right {
+  background: linear-gradient(
+    257deg,
+    rgba(255, 127, 132, 1) 5%,
+    rgba(255, 100, 136, 1) 35%,
+    rgba(231, 110, 160, 1) 83%
+  );
+}
+
+#loginContent #loginForm {
+  position: absolute;
+  right: -50%;
+  top: 10%;
+  font-size: 12px;
+
+  height: 85vh;
+  width: 30%;
+  margin: auto;
+  /* background-color: var(--clr-form-bg); */
+
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--clr-white);
+}
+
+#loginContent #loginForm .form-title {
+  font-size: 32px;
+  margin-top: 2em;
+  /* margin-left: 4em; */
+  text-transform: uppercase;
+}
+
+#loginContent #loginForm input {
+  padding: 10px 10px;
+  width: 100%;
+  box-shadow: 5px 5px 0px var(--clr-grey);
+}
+
+#loginContent #loginForm label {
+  margin-top: 7px;
+}
+
+#loginContent #loginForm a {
+  color: #fff;
+}
+
+#loginContent #loginForm .submit-btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-weight: 600;
+  border: 2px solid var(--clr-primary);
+  box-shadow: 5px 5px 0px var(--clr-secondary);
+
+  font-size: 14px;
+  padding: 10px 25px;
+  margin: 0 auto;
+}
+
+#loginContent #loginForm .submit-btn:hover {
+  background-color: #fff !important;
+  color: var(--clr-primary);
+  font-weight: 600;
+  box-shadow: none;
+}
+
+#loginContent #loginForm .bg-left {
+  background-color: rgb(148, 53, 92, 40%);
+}
+
+#loginContent #loginForm .bg-left img {
+  height: auto;
+  width: 100%;
+  margin: auto 0;
+}
+
+#loginContent #loginForm .bg-right {
+  background: var(--clr-secondary);
+}
+
+#loginContent #loginForm .bg {
+  height: 100%;
+}
+
+#loginContent #loginForm .form-container {
+  padding: 5em 6em 5em 6em;
+}

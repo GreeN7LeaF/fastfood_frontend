@@ -1,0 +1,30 @@
+.categories-title {
+    margin-bottom: 25px ;
+}
+
+.btn_save_catagories {
+    background-color: #fff;
+    color: #f89d35;
+    border: 1px solid #f89d35;
+}
+
+.btn_save_catagories:hover {
+    background-color: #f89d35;
+    color: #fff;
+    border: 1px dashed #f89d35;
+}
+
+.row-header {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.text_center {
+    text-align: center;
+}
+.seperate {
+    width: 100%;
+    margin: 10px 0;
+    height: 1px;
+    background-color: #f0eeee;
+}

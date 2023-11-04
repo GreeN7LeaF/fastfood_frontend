@@ -1,0 +1,30 @@
+.foodtype_cart_container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px
+}
+
+.foodtype_cart_image {
+    margin-right: 12px;
+}
+
+.foodType_cart_name {
+    font-weight: 700;
+    color: #000
+}
+
+.foodType_cart_name_icon {
+    margin-left: auto;
+    font-size: 25px;
+
+    color: rgb(182, 89, 22)
+}
+
+.nav_item_margin_top {
+    cursor: pointer;
+}
+
+.foodType--active {
+    background-color: red;
+}

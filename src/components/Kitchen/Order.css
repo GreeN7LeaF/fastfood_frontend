@@ -1,0 +1,9 @@
+#myMain .form-list {
+  margin-top: 20px;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.item-list .col-4 {
+  padding-left: 8%;
+}

@@ -1,0 +1,27 @@
+.adminLayout_container {
+    background-color: #f8f7f7;
+}
+
+.sideBar_container {
+    padding: 0 10px;
+}
+
+.sideBar_body_container h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #454545;
+}
+
+.sidbar_container_name_com {
+    font-size: 20px;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    color: rgba(247, 147, 9, 0.867);
+}
+
+.sidebar {
+    margin-right: 30px;
+    padding: 0 20px;
+    background-color: #fff;
+}

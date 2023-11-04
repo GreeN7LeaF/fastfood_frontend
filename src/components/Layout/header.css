@@ -1,0 +1,7 @@
+@import "../../css/root.css";
+
+.order-sub-header .nav-link.active {
+  background-color: var(--clr-primary);
+  border-radius: 10px;
+  font-weight: 700;
+}
